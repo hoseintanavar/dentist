@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vazirmatn&display=swap");
+* {
+  font-family: "Vazirmatn", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: auto;
+  height: 75px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+nav ul li {
+  border: none;
+  list-style: none;
+  padding: 0 10px;
+}
+nav ul a {
+  font-size: 16px;
+  color: black;
+  padding: 5px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  cursor: pointer;
+}
+nav ul a:hover {
+  color: black;
+  background-color: #E1E5FE;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+nav .navMenu {
+  display: none;
+}
+nav .navLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navLogo img {
+  width: 75px;
+  height: 75px;
+}
+nav .navLogo .primeryButton {
+  margin-left: 20px;
+  background-color: white;
+  border: none;
+  width: 120px;
+  height: 60px;
+}
+nav .navLogo a {
+  text-decoration: none;
+  font-size: 19px;
+  color: black;
+}
+
+@media only screen and (max-width: 750px) {
+  nav ul {
+    display: none;
+  }
+  nav .navMenu {
+    display: flex;
+  }
+  nav .navMenu:hover {
+    cursor: pointer;
+  }
+  nav ul.active {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 20px;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #60B4FD;
+  }
+  nav ul.active li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+  nav ul.active li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 31, 31);
+    display: block;
+    font-weight: bold;
+    background-color: #fefae0;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px;
+  }
+  nav ul.active li a:hover {
+    color: black;
+    background-color: #E1E5FE;
+  }
+}/*# sourceMappingURL=main.css.map */

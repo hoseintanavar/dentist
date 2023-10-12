@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vazirmatn&display=swap');
+
+* {
+    font-family: 'Vazirmatn', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// navigation
+
+nav {
+    width: auto;
+    height: 75px;
+    padding: 0 40px;
+    @include space ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    ul {
+
+        li {
+            border: none;
+            list-style: none;
+            padding: 0 10px;
+        }
+        a {
+            font-size: 16px;
+            color: black;
+            padding: 5px 30px;
+            margin-right: 20px;
+            text-decoration: none;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                background-color: #E1E5FE;
+                border-radius: 20px;
+                transition-duration: 0.4s;
+            }
+        }
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navLogo {
+        @include center;
+        
+        img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .primeryButton {
+            margin-left: 20px;
+            background-color: white;
+            border: none;
+            width: 120px;
+            height: 60px;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 19px;
+            color: black;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// respomsive nsvigation
+
+@media only screen and (max-width: 750px) {
+    nav {
+
+        ul {
+            display: none;
+        }
+
+        .navMenu {
+            display: flex;
+
+            &:hover {
+                cursor: pointer
+            }
+        }
+        
+        ul.active {
+            border-radius: 5px;
+            @include center;
+            position: absolute;
+            border: 20px;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 200px;
+            background-color: #60B4FD;
+
+            li {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                align-items: center; 
+
+                a {
+                    @include center;
+                    color: rgb(34, 31, 31);
+                    display: block;
+                    font-weight: bold;
+                    background-color: #fefae0;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    margin: 10px;
+
+                    &:hover {
+                        color:black;
+                        background-color: #E1E5FE;
+
+                    }
+                }
+            }
+        }
+    }
+}
