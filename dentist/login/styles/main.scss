@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vazirmatn&display=swap');
+
+* {
+    font-family: 'Vazirmatn', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    @include center;
+    flex-direction: column
+}
+.container {
+    background-color: white;
+    width: 450px;
+    height: 550px;
+    margin-top: 75px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 7px;
+    padding: 30px;
+
+    .singUpA {
+        
+    }
+
+    .primeryP {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    a {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        display: flex;
+
+        label {
+            font-size: 18px;
+            margin-bottom: 3px;
+            cursor: pointer;
+        }
+
+        input {
+            height: 15px;
+            padding: 15px;
+            border: none;
+            margin-bottom: 10px;
+            background-color: #CBE6FF;
+            border-radius: 5px;
+        }
+    }
+
+    .chekBox {
+        height: 60px;
+        background-color: #CBE6FF;
+        border-radius: 5px;
+    }
+
+    
+}
+
