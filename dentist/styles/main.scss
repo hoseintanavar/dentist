@@ -157,7 +157,7 @@ nav {
         }
         
         ul.active {
-            border-radius: 5px;
+            border-radius: 0 0 5px 5px;
             @include center;
             position: absolute;
             border: 20px;

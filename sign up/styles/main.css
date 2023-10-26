@@ -10,18 +10,39 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+}
+body .backA {
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+}
+body .backA i {
+  margin-right: 20px;
+}
+body .backA button {
+  border: none;
+  color: white;
+  background-color: #00c3ff;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .container {
   background-color: white;
   width: 450px;
   height: 600px;
-  margin-top: 75px;
+  margin-top: 100px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 7px;
 }
 .container .signUpBox {
-  margin: 30px 30px 17px 30px;
+  margin: 30px 30px 16px 30px;
 }
 .container .singUpB {
   width: 100%;
@@ -30,6 +51,7 @@ body {
   background-color: #00c3ff;
   height: 50px;
   cursor: pointer;
+  border-radius: 0 0 7px 7px;
 }
 .container .primeryP {
   display: flex;

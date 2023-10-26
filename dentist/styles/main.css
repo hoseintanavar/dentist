@@ -70,7 +70,7 @@ nav .navLogo a {
     cursor: pointer;
   }
   nav ul.active {
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
