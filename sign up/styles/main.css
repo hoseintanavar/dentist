@@ -18,11 +18,7 @@ body .backA {
   top: 20px;
   left: 20px;
   display: flex;
-}
-body .backA i {
-  margin-right: 20px;
-}
-body .backA button {
+  align-items: center;
   border: none;
   color: white;
   background-color: #00c3ff;
@@ -31,6 +27,10 @@ body .backA button {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
+  padding-right: 25px;
+}
+body .backA i {
+  margin-right: 10px;
 }
 
 .container {
