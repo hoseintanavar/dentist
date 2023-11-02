@@ -14,6 +14,9 @@ nav {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+nav ul img {
+  display: none;
+}
 nav ul li {
   border: none;
   list-style: none;
@@ -46,22 +49,42 @@ nav .navLogo img {
   width: 75px;
   height: 75px;
 }
-nav .navLogo .primeryButton {
-  margin-left: 20 px;
-  background-color: white;
+nav .primeryButton {
+  margin-left: 20px;
+  background-color: #37D0FF;
+  color: white;
   border: none;
-  width: 120px;
+  width: 140px;
   height: 60px;
+  border-radius: 10px;
 }
-nav .navLogo a {
+nav .primeryButton:hover {
+  background-color: #00c3ff;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav .primeryButton a {
   text-decoration: none;
-  font-size: 19px;
-  color: black;
+  font-size: 18px;
+  color: white;
 }
 
 @media only screen and (max-width: 750px) {
+  nav .navLogo {
+    display: none;
+  }
   nav ul {
     display: none;
+    flex-direction: column;
+  }
+  nav ul img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
   }
   nav .navMenu {
     display: flex;
@@ -70,27 +93,24 @@ nav .navLogo a {
     cursor: pointer;
   }
   nav ul.active {
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     border: 20px;
-    top: 100px;
-    left: 0px;
-    width: 100%;
-    height: 200px;
-    background-color: #60B4FD;
+    top: 75px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #00b4d8;
   }
   nav ul.active li {
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 25px;
-    align-items: center;
   }
   nav ul.active li a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: right;
     color: rgb(34, 31, 31);
     display: block;
     font-weight: bold;

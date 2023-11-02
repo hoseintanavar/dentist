@@ -60,6 +60,7 @@ body .backA i {
 .container a {
   text-decoration: none;
   margin-right: 10px;
+  color: #00c3ff;
 }
 .container .inputs {
   flex-direction: column;
