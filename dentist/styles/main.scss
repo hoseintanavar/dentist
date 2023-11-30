@@ -104,49 +104,106 @@ nav {
 }
 
 main {
-    @include center ;
     flex-direction: column;
-    justify-content: center;
     padding: 30px;
 
-    .dentistName {
-        display: flex;
-        align-items: center;
 
-        img {
-            width: 30px;
-            height: 30px;
+    .container {
+        @include center;
+        flex-direction: column;
+
+        
+        .dentistName {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+    
+            img {
+                width: 30px;
+                height: 30px;
+                padding-left: 5px;
+            }
+    
+            h2 {
+                margin-bottom: 15px;
+            }
         }
-
-        h2 {
-            margin-bottom: 15px;
+    
+        .proBox {
+            border-radius: 10px;
+            width: 50%;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    
+            .Specificatios {
+                display: flex;
+    
+                img {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50px;
+                }
+    
+                h2 {
+                    padding: 20px 10px 0 0;
+                }
+            }
+    
+            p {
+                font-size: 18px;
+            }
         }
     }
+    
 
+    .container2 {
+        @include center;
+        flex-direction: column;
 
-
-    .proBox {
-        // border: 1px solid #17A3BF;
-        border-radius: 10px;
-        width: 50%;
-        padding: 30px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-        .Specificatios {
+        .experiences {
             display: flex;
+            align-items: center;
+            width: 50%;
+            padding: 30px 0 15px 0;
 
             img {
-                height: 70px;
-                width: 70px;
-                border-radius: 50px;
-            }
-
-            h2 {
-                padding: 20px 10px 0 0;
+                height: 25px;
+                width: 25px;
+                padding-left: 5px;
             }
         }
-
-        p {
-            font-size: 18px;
+    
+        .commentsBox {
+            height: 75px;
+            border-radius: 10px;
+            width: 50%;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            padding: 30px;
+            align-items: center;
+            position: relative;
+    
+            a {
+                position: absolute;
+                left: 20px;
+                bottom: 10px;
+                text-decoration: none;
+                padding: 10px;
+                background-color: white;
+                color: #37D0FF;
+                border: 2px solid #37D0FF;
+                border-radius: 10px;
+        
+                &:hover {
+                    background-color: #00c3ff;
+                    color: white;
+                    border-radius: 10px;
+                    transition: 0.3s;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+        
+            }   
         }
     }
 }
@@ -393,6 +450,17 @@ footer {
 
 }
 
+
+@media only screen and (max-width: 750px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {}
+}
+
 @media only screen and (max-width: 750px) {
 
     * {
@@ -407,7 +475,7 @@ footer {
 
         .firstlide {
             flex-direction: column;
-            
+
 
             .footerBar {
                 display: flex;
@@ -422,7 +490,7 @@ footer {
                     width: 80px;
                     margin: 0;
                     padding: 0;
-                    @include center ;
+                    @include center;
                     color: black;
                     text-decoration: none;
                     cursor: pointer;
@@ -460,6 +528,7 @@ footer {
                 }
             }
         }
+
         .contactBox {
             display: flex;
             flex-direction: column;

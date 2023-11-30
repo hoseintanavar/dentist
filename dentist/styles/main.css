@@ -76,43 +76,92 @@ nav .primeryButton a {
 }
 
 main {
+  flex-direction: column;
+  padding: 30px;
+}
+main .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  justify-content: center;
-  padding: 30px;
 }
-main .dentistName {
+main .container .dentistName {
   display: flex;
   align-items: center;
+  width: 50%;
 }
-main .dentistName img {
+main .container .dentistName img {
   width: 30px;
   height: 30px;
+  padding-left: 5px;
 }
-main .dentistName h2 {
+main .container .dentistName h2 {
   margin-bottom: 15px;
 }
-main .proBox {
+main .container .proBox {
   border-radius: 10px;
   width: 50%;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-main .proBox .Specificatios {
+main .container .proBox .Specificatios {
   display: flex;
 }
-main .proBox .Specificatios img {
+main .container .proBox .Specificatios img {
   height: 70px;
   width: 70px;
   border-radius: 50px;
 }
-main .proBox .Specificatios h2 {
+main .container .proBox .Specificatios h2 {
   padding: 20px 10px 0 0;
 }
-main .proBox p {
+main .container .proBox p {
   font-size: 18px;
+}
+main .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .container2 .experiences {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 30px 0 15px 0;
+}
+main .container2 .experiences img {
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
+}
+main .container2 .commentsBox {
+  height: 75px;
+  border-radius: 10px;
+  width: 50%;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  padding: 30px;
+  align-items: center;
+  position: relative;
+}
+main .container2 .commentsBox a {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  color: #37D0FF;
+  border: 2px solid #37D0FF;
+  border-radius: 10px;
+}
+main .container2 .commentsBox a:hover {
+  background-color: #00c3ff;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 footer {
@@ -261,6 +310,12 @@ footer .contactBox .iconBox a i {
   nav ul.active li a:hover {
     color: black;
     background-color: #E1E5FE;
+  }
+}
+@media only screen and (max-width: 750px) {
+  * {
+    margin: 0;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 750px) {
