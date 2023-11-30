@@ -85,6 +85,7 @@ main {
 }
 main .dentistName {
   display: flex;
+  align-items: center;
 }
 main .dentistName img {
   width: 30px;
