@@ -14,15 +14,20 @@ nav {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-nav ul img {
+nav .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navBar ul img {
   display: none;
 }
-nav ul li {
+nav .navBar ul li {
   border: none;
   list-style: none;
   padding: 0 10px;
 }
-nav ul a {
+nav .navBar ul li a {
   font-size: 16px;
   color: black;
   padding: 5px 30px;
@@ -31,9 +36,9 @@ nav ul a {
   justify-content: space-between;
   cursor: pointer;
 }
-nav ul a:hover {
-  color: black;
-  background-color: #E1E5FE;
+nav .navBar ul li a:hover {
+  color: white;
+  background-color: #00b4d8;
   border-radius: 20px;
   transition-duration: 0.4s;
 }
@@ -54,8 +59,8 @@ nav .primeryButton {
   background-color: #37D0FF;
   color: white;
   border: none;
-  width: 140px;
-  height: 60px;
+  width: 130px;
+  height: 50px;
   border-radius: 10px;
 }
 nav .primeryButton:hover {
@@ -70,25 +75,56 @@ nav .primeryButton a {
   color: white;
 }
 
-main .main {
-  height: 500px;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+main .dentistName {
+  display: flex;
+}
+main .dentistName img {
+  width: 30px;
+  height: 30px;
+}
+main .dentistName h2 {
+  margin-bottom: 15px;
+}
+main .proBox {
+  border-radius: 10px;
+  width: 50%;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+main .proBox .Specificatios {
+  display: flex;
+}
+main .proBox .Specificatios img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+main .proBox .Specificatios h2 {
+  padding: 20px 10px 0 0;
+}
+main .proBox p {
+  font-size: 18px;
 }
 
 footer {
   background-color: #f5f5f5;
 }
 footer .firstlide {
-  padding: 50px 50px;
+  justify-content: space-between;
+  padding: 50px 70px;
   display: flex;
   align-items: center;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  position: relative;
-  z-index: 0;
 }
 footer .firstlide img {
-  position: absolute;
-  top: 70px;
-  left: 30px;
   height: 100px;
   width: 100px;
   border-radius: 5px;
@@ -96,16 +132,14 @@ footer .firstlide img {
 footer .firstlide ul {
   display: flex;
 }
-footer .firstlide ul .footerBar, footer .firstlide ul .footerBar2, footer .firstlide ul .footerBar3 {
-  margin-top: 10px;
-  margin-right: 40px;
+footer .firstlide ul .footerBar {
   display: flex;
   flex-direction: column;
   border: none;
   list-style: none;
   padding: 0 10px;
 }
-footer .firstlide ul .footerBar a, footer .firstlide ul .footerBar2 a, footer .firstlide ul .footerBar3 a {
+footer .firstlide ul .footerBar a {
   margin-top: 10px;
   font-size: 16px;
   color: black;
@@ -115,21 +149,22 @@ footer .firstlide ul .footerBar a, footer .firstlide ul .footerBar2 a, footer .f
   justify-content: space-between;
   cursor: pointer;
 }
-footer .firstlide ul .footerBar a:hover, footer .firstlide ul .footerBar2 a:hover, footer .firstlide ul .footerBar3 a:hover {
+footer .firstlide ul .footerBar a:hover {
   color: white;
   background-color: #00b4d8;
   border-radius: 20px;
   transition-duration: 0.4s;
 }
 footer .secondSlide {
-  position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 70px;
 }
 footer .secondSlide .loremP {
   font-size: 17px;
   width: 50%;
-  padding: 40px 70px;
+  padding: 40px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,36 +172,40 @@ footer .secondSlide .loremP {
 footer .secondSlide img {
   width: 100px;
   height: 100px;
-  margin-top: 40px;
   border-radius: 5px;
 }
 footer .secondSlide .footerLogo {
   display: none;
 }
-footer .secondSlide .iconBox {
-  margin-top: 50px;
-  margin-left: 40px;
+footer .contactBox {
+  padding: 15px 70px;
+  background-color: #17A3BF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-footer .secondSlide .iconBox h4 {
-  margin-bottom: 15px;
+footer .contactBox p {
+  color: white;
+  font-size: 15px;
 }
-footer .secondSlide .iconBox a {
-  padding-right: 15px;
-  list-style: none;
-  color: black;
+footer .contactBox .iconBox {
+  display: flex;
+  align-items: center;
 }
-footer .secondSlide .iconBox a i {
-  margin: 0 10px 0 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  cursor: pointer;
-}
-footer p {
+footer .contactBox .iconBox a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: small;
+  padding-right: 15px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+footer .contactBox .iconBox a i {
+  margin: 0 10px 0 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
@@ -231,20 +270,29 @@ footer p {
   footer .logo {
     display: none;
   }
-  footer .firstlide .footerBar, footer .firstlide .footerBar2, footer .firstlide .footerBar3 {
+  footer .firstlide {
+    flex-direction: column;
+  }
+  footer .firstlide .footerBar {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: none;
     list-style: none;
   }
-  footer .firstlide .footerBar a, footer .firstlide .footerBar2 a, footer .firstlide .footerBar3 a {
-    font-size: 16px;
+  footer .firstlide .footerBar a {
+    width: 80px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
     text-decoration: none;
-    justify-content: space-between;
     cursor: pointer;
   }
-  footer .firstlide .footerBar a:hover, footer .firstlide .footerBar2 a:hover, footer .firstlide .footerBar3 a:hover {
+  footer .firstlide .footerBar a:hover {
     color: white;
     background-color: #00b4d8;
     border-radius: 20px;
@@ -266,12 +314,15 @@ footer p {
   footer .secondSlide .imgDiv .footerLogo {
     display: flex;
     margin-left: 10px;
+    margin-bottom: 10px;
   }
-  footer .secondSlide .iconBox {
-    margin-bottom: 15px;
-    margin-top: 20px;
+  footer .contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  footer p {
+  footer .contactBox p {
     font-size: 14px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
