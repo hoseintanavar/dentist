@@ -112,50 +112,50 @@ main {
         @include center;
         flex-direction: column;
 
-        
+
         .dentistName {
             display: flex;
             align-items: center;
             width: 50%;
 
-    
+
             img {
                 width: 30px;
                 height: 30px;
                 padding-left: 5px;
             }
-    
+
             h2 {
                 margin-bottom: 15px;
             }
         }
-    
+
         .proBox {
             border-radius: 10px;
             width: 50%;
             padding: 30px;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    
+
             .Specificatios {
                 display: flex;
-    
+
                 img {
                     height: 70px;
                     width: 70px;
                     border-radius: 50px;
                 }
-    
+
                 h2 {
                     padding: 20px 10px 0 0;
                 }
             }
-    
+
             p {
                 font-size: 18px;
             }
         }
     }
-    
+
 
     .container2 {
         @include center;
@@ -173,9 +173,8 @@ main {
                 padding-left: 5px;
             }
         }
-    
+
         .commentsBox {
-            height: 75px;
             border-radius: 10px;
             width: 50%;
             padding: 30px;
@@ -183,18 +182,43 @@ main {
             padding: 30px;
             align-items: center;
             position: relative;
-    
+
+            input {
+                display: block;
+                margin-top: 15px;
+                height: 15px;
+                width: 50%;
+                padding: 15px;
+                border: none;
+                margin-bottom: 10px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;        
+                background-color: #CBE6FF;
+                border-radius: 5px;
+            }
+
+            #commentTexterea {
+                display: block;
+                margin-top: 15px;
+                padding: 15px;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                background-color: #CBE6FF;
+                border-radius: 5px;
+            }
+
             a {
                 position: absolute;
                 left: 20px;
                 bottom: 10px;
+                width: 100px;
+                @include center ;
                 text-decoration: none;
                 padding: 10px;
                 background-color: white;
                 color: #37D0FF;
                 border: 2px solid #37D0FF;
                 border-radius: 10px;
-        
+
                 &:hover {
                     background-color: #00c3ff;
                     color: white;
@@ -202,8 +226,8 @@ main {
                     transition: 0.3s;
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 }
-        
-            }   
+
+            }
         }
     }
 }
